@@ -24,14 +24,21 @@ struct ContentView: View {
             VStack{
                 CanvasView(canvasView: $canvasView)
                     .frame(width: 350,height: 350)
-                    .border(Color.black)
-                
+                    .cornerRadius(10)
+//                    .overlay(RoundedRectangle(cornerRadius: 10)
+//                        .stroke(Color.orange, lineWidth: 4))
+                    .shadow(radius: 20)
+                    .padding()
                 Button {
                     canvasView.drawing = PKDrawing()
                 } label: {
                     Text("CLEAR")
                 }
                 .padding()
+                .frame(width: 230,height: 60)
+                .background(Color.orange)
+                .cornerRadius(10)
+                .shadow(radius: 10)
                 
                 Button {
                     textRecognition()
@@ -40,6 +47,11 @@ struct ContentView: View {
                     Text("TEXT RECOGNITION")
                 }
                 .padding()
+                .padding()
+                .frame(width: 230,height: 60)
+                .background(Color.orange)
+                .cornerRadius(10)
+                .shadow(radius: 10)
                 
                 Button {
                     saveToPhotosAlbum()
@@ -47,9 +59,17 @@ struct ContentView: View {
                     Text("SAVE PHOTO")
                 }
                 .padding()
+                .frame(width: 230,height: 50)
+                .background(Color.orange)
+                .cornerRadius(10)
+                .shadow(radius: 10)
+
                 
-                Text("Recognized letters: \(ttt)")
-                    .padding()
+                Text("RECOGNIZED LETTERS:")
+                    .padding(.top)
+                    .foregroundColor(Color.blue)
+                Text("\(ttt)")
+                    .foregroundColor(Color.blue)
                 
             }
         }.ignoresSafeArea(.all)
@@ -58,6 +78,9 @@ struct ContentView: View {
     func convertResults() {
         for letter in recoString {
             ttt.append(letter)
+        }
+        if (ttt == ""){
+            ttt = "not recognized"
         }
     }
     
