@@ -15,9 +15,11 @@ struct CanvasView {
 
 extension CanvasView: UIViewRepresentable {
   func makeUIView(context: Context) -> PKCanvasView {
-    canvasView.tool = PKInkingTool(.pen, color: .gray, width: 10)
-    #if targetEnvironment(simulator)
-      canvasView.drawingPolicy = .anyInput
+      canvasView.tool = PKInkingTool(.pen, color: .gray, width: 10)
+      canvasView.allowsFingerDrawing = true
+
+#if targetEnvironment(simulator)
+      
     #endif
     return canvasView
   }
