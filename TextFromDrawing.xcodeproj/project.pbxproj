@@ -13,7 +13,6 @@
 		9076B125290BB6B60006824A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9076B124290BB6B60006824A /* Preview Assets.xcassets */; };
 		9076B12C290BB6D30006824A /* CanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9076B12B290BB6D30006824A /* CanvasView.swift */; };
 		9076B12E290BB94E0006824A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9076B12D290BB94E0006824A /* GoogleService-Info.plist */; };
-		9076B134290BBBCE0006824A /* Processor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9076B133290BBBCE0006824A /* Processor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,7 +23,6 @@
 		9076B124290BB6B60006824A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9076B12B290BB6D30006824A /* CanvasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasView.swift; sourceTree = "<group>"; };
 		9076B12D290BB94E0006824A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		9076B133290BBBCE0006824A /* Processor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Processor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +58,6 @@
 				9076B12D290BB94E0006824A /* GoogleService-Info.plist */,
 				9076B11D290BB6B50006824A /* TextFromDrawingApp.swift */,
 				9076B11F290BB6B50006824A /* ContentView.swift */,
-				9076B133290BBBCE0006824A /* Processor.swift */,
 				9076B12B290BB6D30006824A /* CanvasView.swift */,
 				9076B121290BB6B60006824A /* Assets.xcassets */,
 				9076B123290BB6B60006824A /* Preview Content */,
@@ -153,7 +150,6 @@
 			files = (
 				9076B120290BB6B50006824A /* ContentView.swift in Sources */,
 				9076B11E290BB6B50006824A /* TextFromDrawingApp.swift in Sources */,
-				9076B134290BBBCE0006824A /* Processor.swift in Sources */,
 				9076B12C290BB6D30006824A /* CanvasView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
